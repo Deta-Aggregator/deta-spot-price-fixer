@@ -1,0 +1,12 @@
+node_modules
+coverage
+coverage.json
+build
+artifacts
+cache
+artifacts-zk
+cache-zk
+.env
+.idea
+solcInputs
+*.log
