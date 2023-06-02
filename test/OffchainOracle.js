@@ -1,6 +1,6 @@
 const hre = require('hardhat');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect, ether, assertRoughlyEqualValues } = require('@1inch/solidity-utils');
+const { expect, ether, assertRoughlyEqualValues } = require('@deta/solidity-utils');
 const { tokens, assertRoughlyEquals, deployContract } = require('./helpers.js');
 
 const uniswapV2Factory = '0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f';

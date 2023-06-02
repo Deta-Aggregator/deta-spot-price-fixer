@@ -1,6 +1,6 @@
 const hre = require('hardhat');
 const { ethers } = hre;
-const { constants } = require('@1inch/solidity-utils');
+const { constants } = require('@deta/solidity-utils');
 
 const _delay = (ms) =>
     new Promise((resolve) => {

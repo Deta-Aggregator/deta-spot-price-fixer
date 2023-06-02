@@ -1,18 +1,18 @@
 <div align="center">
-    <img src="https://github.com/1inch/farming/blob/master/.github/1inch_github_w.svg#gh-light-mode-only">
-    <img src="https://github.com/1inch/farming/blob/master/.github/1inch_github_b.svg#gh-dark-mode-only">
+    <img src="https://github.com/deta/farming/blob/master/.github/deta_github_w.svg#gh-light-mode-only">
+    <img src="https://github.com/deta/farming/blob/master/.github/deta_github_b.svg#gh-dark-mode-only">
 </div>
 
 # Spot Price Aggregator
 
-[![Build Status](https://github.com/1inch/spot-price-aggregator/actions/workflows/test.yml/badge.svg)](https://github.com/1inch/spot-price-aggregator/actions)
-[![Coverage Status](https://codecov.io/gh/1inch/spot-price-aggregator/branch/master/graph/badge.svg?token=6V7609YJ1Q)](https://codecov.io/gh/1inch/spot-price-aggregator)
+[![Build Status](https://github.com/deta/spot-price-aggregator/actions/workflows/test.yml/badge.svg)](https://github.com/deta/spot-price-aggregator/actions)
+[![Coverage Status](https://codecov.io/gh/deta/spot-price-aggregator/branch/master/graph/badge.svg?token=6V7609YJ1Q)](https://codecov.io/gh/deta/spot-price-aggregator)
 
-The 1inch spot price aggregator is a set of smart contracts that extract price data for tokens traded on DEXes from the blockchain. To avoid price manipulations within a transaction, the spot price aggregator should ONLY be used off-chain. DO NOT use it on-chain. For off-chain usage see [Examples](#examples) section below.
+The deta spot price aggregator is a set of smart contracts that extract price data for tokens traded on DEXes from the blockchain. To avoid price manipulations within a transaction, the spot price aggregator should ONLY be used off-chain. DO NOT use it on-chain. For off-chain usage see [Examples](#examples) section below.
 
 ## Wrappers
 
-To handle wrapped tokens, such as wETH, cDAI, aDAI etc., the 1inch spot price aggregator uses custom wrapper smart contracts that wrap/unwrap tokens at the current wrapping exchange rate. 
+To handle wrapped tokens, such as wETH, cDAI, aDAI etc., the deta spot price aggregator uses custom wrapper smart contracts that wrap/unwrap tokens at the current wrapping exchange rate. 
 
 ## Connectors
 
@@ -57,7 +57,7 @@ If no direct liquidity pair exists between two tokens, the spot price aggregator
    * DAI - [0x6B175474E89094C44Da98b954EedeAC495271d0F](https://etherscan.io/address/0x6B175474E89094C44Da98b954EedeAC495271d0F)
    * USDT - [0xdAC17F958D2ee523a2206206994597C13D831ec7](https://etherscan.io/address/0xdAC17F958D2ee523a2206206994597C13D831ec7)
    * NONE - [0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF](https://etherscan.io/address/0xFFfFfFffFFfffFFfFFfFFFFFffFFFffffFfFFFfF)
-   * 1INCH - [0x111111111117dC0aa78b770fA6A738034120C302](https://etherscan.io/address/0x111111111117dC0aa78b770fA6A738034120C302)
+   * deta - [0x111111111117dC0aa78b770fA6A738034120C302](https://etherscan.io/address/0x111111111117dC0aa78b770fA6A738034120C302)
    * WBTC - [0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599](https://etherscan.io/address/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599)
 
 </details>
@@ -98,7 +98,7 @@ Prev oracle version (legacy) - [0x07D91f5fb9Bf7798734C3f606dB065549F6893bb](http
    * USDC - [0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d](https://bscscan.com/address/0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d)
    * BSC-USD - [0x55d398326f99059fF775485246999027B3197955](https://bscscan.com/address/0x55d398326f99059fF775485246999027B3197955)
    * BUSD - [0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56](https://bscscan.com/address/0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56)
-   * 1INCH - [0x111111111117dC0aa78b770fA6A738034120C302](https://bscscan.com/address/0x111111111117dC0aa78b770fA6A738034120C302)
+   * deta - [0x111111111117dC0aa78b770fA6A738034120C302](https://bscscan.com/address/0x111111111117dC0aa78b770fA6A738034120C302)
 
 </details>
 
@@ -141,7 +141,7 @@ Prev oracle version (legacy) - [0x7F069df72b7A39bCE9806e3AfaF579E54D8CF2b9](http
 
 <details><summary>Supported DEXes</summary>
 
-   * 1inch Liquidity Protocol V1.1 - [0xb707d89D29c189421163515c59E42147371D6857](https://kovan.etherscan.io/address/0xb707d89D29c189421163515c59E42147371D6857)
+   * deta Liquidity Protocol V1.1 - [0xb707d89D29c189421163515c59E42147371D6857](https://kovan.etherscan.io/address/0xb707d89D29c189421163515c59E42147371D6857)
    * UniswapV2 - [0x57da811a9EF9b79DbC2EA6f6dc39368a8Da1Cf07](https://kovan.etherscan.io/address/0x57da811a9EF9b79DbC2EA6f6dc39368a8Da1Cf07)
    * UniswapV1 - [0x11431a89893025D2a48dCA4EddC396f8C8117187](https://kovan.etherscan.io/address/0x11431a89893025D2a48dCA4EddC396f8C8117187)
 
@@ -417,6 +417,6 @@ Prev oracle version (legacy) - [0x1ec0a5F6dc07E93491426d5aAAc3E2BC505Ef41C](http
 
 ## Examples
 
-* [Single token-to-ETH price usage](https://github.com/1inch-exchange/offchain-oracle/blob/master/examples/single-price.js)
+* [Single token-to-ETH price usage](https://github.com/deta-exchange/offchain-oracle/blob/master/examples/single-price.js)
 
-* [Multiple token-to-ETH prices usage](https://github.com/1inch-exchange/offchain-oracle/blob/master/examples/multiple-prices.js)
+* [Multiple token-to-ETH prices usage](https://github.com/deta-exchange/offchain-oracle/blob/master/examples/multiple-prices.js)

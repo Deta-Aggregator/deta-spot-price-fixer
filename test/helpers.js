@@ -1,5 +1,5 @@
 const { ethers } = require('hardhat');
-const { expect } = require('@1inch/solidity-utils');
+const { expect } = require('@deta/solidity-utils');
 
 const tokens = {
     DAI: '0x6B175474E89094C44Da98b954EedeAC495271d0F',
@@ -9,7 +9,7 @@ const tokens = {
     ETH: '0x0000000000000000000000000000000000000000',
     EEE: '0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE',
     WBTC: '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599',
-    '1INCH': '0x111111111117dC0aa78b770fA6A738034120C302',
+    'deta': '0x111111111117dC0aa78b770fA6A738034120C302',
     USDT: '0xdAC17F958D2ee523a2206206994597C13D831ec7',
     LINK: '0x514910771AF9Ca656af840dff83E8264EcF986CA',
     YFI: '0x0bc529c00C6401aEF6D220BE8C6Ea1667F6Ad93e',

@@ -1,3 +1,3 @@
-# 1inch offchain oracle
+# deta offchain oracle
 
-https://github.com/1inch/offchain-oracle
+https://github.com/deta/offchain-oracle

@@ -1,6 +1,6 @@
 const { ethers } = require('hardhat');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect, ether } = require('@1inch/solidity-utils');
+const { expect, ether } = require('@deta/solidity-utils');
 const { tokens } = require('./helpers.js');
 
 const oracles = {

@@ -27,7 +27,7 @@ const tokens = [
         address: '0xdac17f958d2ee523a2206206994597c13d831ec7', // USDT
         decimals: 6,
     }, {
-        address: '0x111111111117dc0aa78b770fa6a738034120c302', // 1INCH
+        address: '0x111111111117dc0aa78b770fa6a738034120c302', // deta
         decimals: 18,
     },
 ];

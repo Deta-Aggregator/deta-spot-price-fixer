@@ -1,5 +1,5 @@
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect, ether } = require('@1inch/solidity-utils');
+const { expect, ether } = require('@deta/solidity-utils');
 const { tokens, deployContract } = require('./helpers.js');
 
 const IDAI = '0x6b093998D36f2C7F0cc359441FBB24CC629D5FF0';

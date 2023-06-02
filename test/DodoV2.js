@@ -1,5 +1,5 @@
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect, ether } = require('@1inch/solidity-utils');
+const { expect, ether } = require('@deta/solidity-utils');
 const { tokens, deployContract } = require('./helpers.js');
 
 const dvmFactory = '0x72d220cE168C4f361dD4deE5D826a01AD8598f6C';
@@ -13,7 +13,7 @@ describe('DodoV2Oracle', function () {
     it('should revert with amount of pools error', async function () {
         const { dodoV2Oracle } = await loadFixture(initContracts);
         await expect(
-            dodoV2Oracle.getRate(tokens.USDT, tokens['1INCH'], tokens.NONE),
+            dodoV2Oracle.getRate(tokens.USDT, tokens['deta'], tokens.NONE),
         ).to.be.revertedWithCustomError(dodoV2Oracle, 'PoolNotFound');
     });
 

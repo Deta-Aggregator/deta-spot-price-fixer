@@ -1,6 +1,6 @@
 const { getChainId } = require('hardhat');
 const { tokens } = require('../../test/helpers.js');
-const { toBN } = require('@1inch/solidity-utils');
+const { toBN } = require('@deta/solidity-utils');
 const {
     idempotentDeploy,
     idempotentDeployGetContract,

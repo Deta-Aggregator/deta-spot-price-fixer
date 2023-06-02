@@ -1,6 +1,6 @@
 const { ethers } = require('hardhat');
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect } = require('@1inch/solidity-utils');
+const { expect } = require('@deta/solidity-utils');
 const { tokens, assertRoughlyEqualValues, deployContract } = require('./helpers.js');
 
 describe('SynthetixOracle', function () {

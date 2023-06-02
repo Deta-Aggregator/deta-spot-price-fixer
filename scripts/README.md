@@ -26,7 +26,7 @@ The script compares the prices of a list of tokens in two different instances of
 The script's behavior is controlled by environment variables, which are specified as follows:
 - `SCRIPT_ETH_PRICE` (required) - The current price of ETH in USD.
 - `SCRIPT_TOKENLIST` (required) - Path to a file with list of tokens to be checked. The list can either be an array of token addresses or an object with token addresses as keys.
-    - Example: result of `https://token-prices.1inch.io/v1.1/1`
+    - Example: result of `https://token-prices.deta.io/v1.1/1`
 - `SCRIPT_NETWORK_NAME` (optional) - Specifies the network from which OffchainOracle's address is obtained during deployment. If not specified, the script defaults to the mainnet.
 - `SCRIPT_SKIP_ORACLES` (optional) - Comma-separated list of oracle addresses that should not be added from a deployed oracle.
 - `SCRIPT_ADD_ORACLES` (optional) - Tube-separated (`|`) list of new oracles to be added. Each entry in the list should follow the format `ContractOracleName:OracleType:[constructor params]`

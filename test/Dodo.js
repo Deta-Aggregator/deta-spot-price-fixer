@@ -1,5 +1,5 @@
 const { loadFixture } = require('@nomicfoundation/hardhat-network-helpers');
-const { expect } = require('@1inch/solidity-utils');
+const { expect } = require('@deta/solidity-utils');
 const { tokens, assertRoughlyEqualValues, deployContract } = require('./helpers.js');
 
 const dodoZoo = '0x3A97247DF274a17C59A3bd12735ea3FcDFb49950';
@@ -14,7 +14,7 @@ describe('DodoOracle', function () {
     it('should revert with amount of pools error', async function () {
         const { dodoOracle } = await loadFixture(initContracts);
         await expect(
-            dodoOracle.getRate(tokens.USDT, tokens['1INCH'], tokens.NONE),
+            dodoOracle.getRate(tokens.USDT, tokens['deta'], tokens.NONE),
         ).to.be.revertedWithCustomError(dodoOracle, 'PoolNotFound');
     });
 

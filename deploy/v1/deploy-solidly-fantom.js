@@ -3,7 +3,7 @@ const {
     idempotentDeploy,
     getContract,
 } = require('../utils.js');
-const { toBN } = require('@1inch/solidity-utils');
+const { toBN } = require('@deta/solidity-utils');
 const { assertRoughlyEqualValues } = require('../../test/helpers.js');
 
 const ORACLES = {
